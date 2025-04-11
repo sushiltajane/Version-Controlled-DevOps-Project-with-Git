@@ -17,8 +17,11 @@ This project follows best practices for managing a DevOps project using **Git** 
 ## 🔧 Getting Started  
 
 ### ✅ Clone the Repository  
-
-git clone https://github.com/sushiltajane/Version-Controlled-DevOps-Project-with-Git.git
+![image](https://github.com/user-attachments/assets/2af652de-3536-401a-94fb-85d0912855df)
+![image](https://github.com/user-attachments/assets/adf58fa6-76ef-40aa-8914-c71c2e25380d)
+![image](https://github.com/user-attachments/assets/9fe8bc31-d2b5-44f8-a9c9-de4aece043c5)
+![image](https://github.com/user-attachments/assets/8016d25a-3623-47b8-9155-3276c35887ca)
+```sh
 cd Version-Controlled-DevOps-Project-with-Git
 ✅ Create a New Branch
 git checkout -b feature-branch
@@ -37,6 +40,8 @@ git checkout <branch>	Switch to a branch
 git commit -m "<message>"	Commit changes
 git push origin <branch>	Push branch to GitHub
 git pull origin <branch>	Pull latest changes
+
+
 
 [image](https://github.com/user-attachments/assets/2af652de-3536-401a-94fb-85d0912855df)
 [image](https://github.com/user-attachments/assets/adf58fa6-76ef-40aa-8914-c71c2e25380d)
