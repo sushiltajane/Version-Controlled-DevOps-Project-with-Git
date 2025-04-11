@@ -1,0 +1,3058 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="images/favicon.png" type="image/png">
+<title>Mr. Skip Holbert | Masterpiece 1967 Camaro | Daytona Beach Florida USA</title>
+<link href="css/style.css" rel="stylesheet" type="text/css"><br>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"><br>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<style>
+ @charset "utf-8";
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Josefin Slab, sans-serif;
+    font-weight: 700;
+   
+     margin: 0;
+    padding: 0;
+
+/*	  background-image: url("../images/bodybackgoundimages.jpg")*/
+/*background-image: url("./images/racing-bg.jpg"); /* Replace with the path to your image */
+  background-size: cover; /* Ensures the image covers the entire screen */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Keeps the background fixed during scrolling */
+  background-position: center; /* Centers the image */
+  margin: 0;
+  padding: 0;*/
+
+  }
+p {
+  font-family: 'Josefin Slab', sans-serif;
+  font-weight: 600px;
+ font-size: 18px;
+}
+.logo img{
+	margin-right: 100px;
+}
+  nav {
+	  background: linear-gradient(180deg, #141414b3, #0000);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 5%;
+    font-size: 18px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    background-color: transparent;
+  }
+
+  nav.scrolled {
+    background-color: rgb(255, 255, 255);
+    transform: scale(1); /* Corrected the scale value */
+    opacity: 0.9;
+    
+  }
+
+  @keyframes blink {
+    0% {
+      opacity: 0.9;
+    }
+    50% {
+      opacity: 0.4; /* Make it semi-transparent in the middle of the animation */
+    }
+    100% {
+      opacity: 0.9;
+    }
+  }
+
+  nav ul {
+	font-family: "Josefin Slab", serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  nav ul li {
+    position: relative;
+	  margin: 0px 5px 21px 5px;
+}
+  
+
+  nav ul li a {
+    color: white;
+	  font-weight:bold;
+	  font-size:24px;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: ruby;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+
+  .nav ul li a:hover {
+    background-color:#700205;
+	  border-radius: 10px;
+    color: white;
+    transform: scale(1.1);
+  }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #700205;
+	  border: 1px solid #d5803b;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    padding: 10px;
+    display: block;
+    color: white;
+    text-decoration: none;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #d5803b;
+	  color:black;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+ .banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    top: -50px;
+}
+
+/* Fallback Image */
+.fallback-image {
+    display: none; /* Hide by default */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/masterpiece.jpg') no-repeat center center/cover; /* Update this path */
+    z-index: -2; /* Behind the video */
+}
+
+/* Media Queries for Responsive Height */
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+    .banner {
+        height: 40vh !important;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .banner {
+        height: 70vh !important;
+    }
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Show Fallback Image on iOS Devices */
+@supports (-webkit-touch-callout: none) {
+    .background-video {
+        display: none; /* Hide video on iOS */
+    }
+    .fallback-image {
+        display: block; /* Show fallback image on iOS */
+    }
+}
+  .content123 {
+    width: 100%;
+    position: absolute;
+    color: white;
+    top: 65%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 20px 80px 20px 80px;
+  }
+
+  .content123 h1 {
+    font-family: "Tourney", serif;
+    font-size: 60px;
+    font-weight: 800;
+    margin-top: 0;
+    text-transform: capitalize;
+    text-align: center;
+  }
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px){
+    .content123 h1 {
+     font-size: 38px;
+     margin-top: 30px;
+}
+.content123 {
+    position: absolute;
+    top: 65%;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    .content123 h1 {
+     font-size: 60px;
+     margin-top: 30px;
+}
+.content123 {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+}
+
+
+  .button {
+    background-color: #d5803b;
+    width: 150px;
+    padding: 15px;
+    margin: 20px 5px;
+    text-align: center;
+    border-radius: 35px;
+    color: black;
+    border: 1px solid #d5803b;
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.5s ease, color 0.5s ease;
+  }
+
+  button:hover {
+    color: white;
+	  
+  }
+
+  /* Basic styling for the navbar */
+#navbar {
+    background-color: transparent; /* Initially transparent */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    transition: background-color 0.3s ease; /* Smooth transition for background change */
+    z-index: 1000; /* Ensure navbar is on top of other content */
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar ul li {
+    margin: 0 15px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+#navbar.scrolled {
+    background-color: black; /* Change to black when scrolled */
+}
+
+/* Add some padding to the body content to ensure it’s not hidden behind the navbar */
+.content {
+    padding-top: 80px; /* Adjust based on your navbar height */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 100px;
+}
+
+/* Add styles for the content (optional) */
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Gallery photos container  */
+       .gallery-container {
+            margin-top: 5px;
+            padding: 0px 80px 0px 80px;
+              margin-bottom: 30px;
+        }
+
+        /* Image card styles */
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Uniform image size */
+        .gallery-img {
+            width: 100%;
+            height: 200px; /* Set fixed height */
+            object-fit: cover; /* Make sure images fill the container without distortion */
+            display: block;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        /* Hover effect on image */
+        .gallery-item:hover .gallery-img {
+            transform: scale(1.05);
+        }
+
+        /* Overlay and caption styles */
+        .caption {
+            position: absolute;
+            bottom: 0; /* Initially at the bottom */
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            opacity: 0; /* Hide caption by default */
+            transition: opacity 0.3s ease;
+            border-radius: 5px;
+        }
+
+        /* Show caption on hover */
+        .gallery-item:hover .caption {
+            opacity: 1; /* Show caption when hovered */
+        }
+
+        /* Box-shadow effect on hover */
+        .gallery-item:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            transform: scale(1.05);
+        }
+
+        .img-box {
+            margin-top: 20px;
+			padding: 8px;
+        }
+
+        /* Responsive Design: 4 images per row for large screens, 2 images per row for medium, and 1 image per row for small screens */
+        @media screen (max-width: 1200px) {
+            .col-lg-3 {
+                flex: 0 0 25%;
+                max-width: 25%;
+            }
+
+        }
+
+        @media screen (max-width: 992px) {
+            .col-md-6 {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+
+        @media screen (max-width: 768px) {
+            .col-sm-12 {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+
+        /* More Button Styles */
+        .more-button {
+            margin-top: 40px;
+            text-align: center;
+            display: flex;
+            justify-content: center; /* Center the button */
+        }
+
+        .more-button a {
+            font-family: "Josefin Slab", serif;
+			padding: 10px 40px 10px 40px;
+            background-color:#ffa500;
+            color:black;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 20px;
+			font-weight: bold;
+            display: inline-block;
+        }
+
+        .more-button a:hover {
+            background-color: #700205;
+			color: white;
+        }
+
+        /* Header Section Styling */
+       .header-section {
+    position: relative; /* Set relative positioning for the pseudo-element */
+   
+    background-size: cover; /* Ensure the background covers the container */
+    background-position: center; /* Center the background image */
+    color: white;
+  
+    margin-bottom: 0; /* No margin bottom to remove gap */
+    border-radius: 10px 10px 0 0; /* Top rounded corners */
+   
+    margin-bottom: -1px; /* Remove gap between header and gallery */
+    overflow: hidden; /* Prevent the pseudo-element from overflowing */
+}
+
+.header-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+    z-index: 1; /* Place overlay behind the text */
+    border-radius: 10px 10px 0 0; /* Match the container's border radius */
+}
+
+.header-section * {
+    position: relative; /* Ensure content is above the overlay */
+    z-index: 2;
+}
+
+
+        .header-section h1 {
+            font-size: 42px;
+			color:#d5803b;
+            font-weight: 700;
+        }
+
+        .header-section p {
+            font-size: 18px;
+	     color: Black;
+            font-weight: lighter;
+        }
+
+        /* Gallery Section with Border */
+        .gallery-section {
+            border: 3px solid #fff ;
+            border-radius: 0 0 10px 10px; /* Bottom rounded corners */
+           padding: 20px;
+           background-color: white;
+        }
+         .container-video-section{
+             background-color: #ffff;
+             
+         }
+
+        .video-section {
+            display: flex;
+            justify-content: space-between;
+           /* padding: 20px; */
+            background-color: #e2e2e2;
+             padding: 15px 80px 15px 80px; 
+            flex-wrap: wrap;  /* Allow wrapping for responsiveness */
+        }
+
+        /* First section (video with anchor) */
+        .first-section {
+            width: 60%;
+            text-align: center;
+           padding: 10px;
+           /*  margin-right: 20px; */
+            /* margin-bottom: 20px; */
+        }
+
+        .first-section video {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 0px;
+        }
+
+        .first-section .video-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .first-section .video-link:hover {
+            background-color: #0056b3;
+        }
+
+        /* Second section (images with anchor links) */
+        .second-section {
+            flex: 2;  /* Takes up twice the space of the first section */
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 3 columns for the grid layout */
+            gap: 10px; /* Reduced gap between images */
+            padding: 10px;
+           height: 330px;
+        }
+
+        .image-container {
+            position: relative;
+            /* border-radius: 8px; */
+            overflow: hidden;  /* Ensure video icon overlay is within the image border */
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 200px;  /* Fixed height for smaller images */
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        /* Hover effect on images */
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Description text for images */
+        .image-container .description {
+            position: absolute;
+            bottom: 10px;
+            right: 0px;  /* Position the description on the right */
+            background-color: #d5803b;
+            color: white;
+            padding: 5px 10px;
+            /* border-radius: 5px; */
+            font-size: 14px;
+            opacity: 0;
+            transform: translateX(100%);  /* Initially off-screen to the right */
+            transition: opacity 0.3s ease, transform 0.3s ease;  /* Add transition for smooth sliding effect */
+        }
+
+        /* Show description on hover (slide in from right to left) */
+        .image-container:hover .description {
+            opacity: 1;
+            transform: translateX(0);  /* Move description to its normal position */
+        }
+
+        .image-container a {
+            display: block;
+            text-decoration: none;
+        }
+
+        /* Video icon overlay */
+        .image-container .video-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40px;  /* Smaller icon */
+            height: 40px; /* Smaller icon */
+            background-image: url('video-icon.png'); /* Replace with actual video icon path */
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        /* Hover effect for video icon */
+        .image-container:hover .video-icon {
+            opacity: 1;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media only screen and (min-device-width: 320px) and (max-device-width: 768px){            
+            .video-section {
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 20px 20px 20px;
+            }
+
+            .second-section {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+                width: 100%;
+            }
+
+            .first-section {
+                margin-right: 0;
+                margin-bottom: 0px;
+                width: 100%;
+            }
+
+            .first-section video {
+                max-width: 100% !important;
+            }
+            .container-video-section{
+             background-color: #ffff;
+            
+         }
+        .video-yt-section-link h1{
+           font-size: 32px !important;
+          }
+          .video-yt-link-heding {
+            justify-items: center;
+         }
+         .image-container img {
+         width: 100%;
+          height: 150px;
+       }
+        }
+
+        @media screen (max-width: 480px) {
+            /* Adjust layout for mobile screens */
+            .second-section {
+                grid-template-columns: 1fr; /* 1 column for mobile */
+                width: 100%;
+            }
+
+            .image-container img {
+                height: 120px;  /* Adjust image height for mobile */
+            }
+
+            .first-section .video-link {
+                width: 100%;
+                padding: 12px;
+                font-size: 16px;
+            }
+
+            .first-section video {
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+      
+        
+/*service section =======================*/
+  .services-container {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .services-container h1 {
+            font-size: 38px;
+            margin-bottom: 20px;
+            color: #d5803b;
+font-weight: 700;
+        }
+        .services-container p {
+            font-size: 18px;
+            margin-bottom: 40px;
+            color: #000000;
+               font-weight: 600;
+        }
+        .cardone {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .cardtwo {
+               padding: 15px 10px 0px 10px;
+            text-align: center;
+            border-radius: 8px;
+            width: 300px;
+           background-color: #F5C658;
+          padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+            background: linear-gradient(180deg, #5f5f5f, #1f1f1f);
+           
+        }
+        .cardtwo:hover {
+            transform: translateY(-10px);
+        }
+        .cardtwo h3 {
+            margin-top: 0;   
+    color: #d5803b;
+    font-weight: 600;
+   
+        }
+        .cardtwo p { 
+          color: #c1c1c1;
+         font-family: "Josefin Slab", serif;
+        font-size: 20px;
+         font-weight: 600;
+        }
+        .cardtwo button {
+            font-family: "Josefin Slab", serif;
+            font-weight: bold;
+            background-color: #d5803b;
+            border: none;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+        .cardtwo button:hover {
+            background-color: #700205;
+            color:white;
+        }
+
+        /* Mobile View */
+        @media screen (max-width: 600px) {
+            .services-container h1 {
+                font-size: 38px;
+                font-weight: 700;
+            }
+            .services-container p {
+                font-size: 1rem;
+            }
+            .cardone {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .cardtwo {
+                width: 100%;
+                padding: 15px;
+            }
+        }
+
+        /* Tablet View */
+        @media screen (max-width: 768px) {
+            .services-container h1 {
+                font-size: 2.2rem;
+            }
+            .services-container p {
+                font-size: 1.1rem;
+            }
+            .cardone {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            .cardtwo {
+                width: 45%;
+            }
+        }
+  
+
+/*video galaery section      ---------------------->*/
+   /* Gallery Container */       
+/*email section*/
+ .email{
+      display: flex;
+      justify-content: center;
+    }
+    .email-container {
+      background-image: url("../images/g50.jpg");
+      background-image: cover;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      
+      width: 100%;
+      max-width: 100%; /* Set a max width for the popup */
+      padding: 45px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+    .email-container::before {
+  content: ''; /* This creates the pseudo-element */
+  position: absolute; /* Position it over the background */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  z-index: -1; /* Ensure it's behind the content */
+}
+
+    .email-header {
+       color: #ffa500; 
+      padding: 0px 2px;
+      position: relative;
+    }
+
+    .email-header::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      /* background: rgba(0, 0, 0, 0.4); */
+      z-index: 0;
+    }
+
+    .header-text {
+      position: relative;
+      z-index: 1;
+    
+    }
+
+    .form-container {
+      margin-top: px;
+      /* background: rgba(0, 0, 0, 0.4);     */
+      padding: 0px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+    }
+
+    .form-container label {
+      font-size: 15px;
+      color: #f8f8f8;
+      margin-bottom: px;
+      display: block;
+    }
+
+    /* Horizontal layout for form */
+    .form-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      
+    }
+
+    .form-container input[type="email"] {
+      padding: 10px 100px 10px 5px;
+      border: 1px solid #d5803b;
+       /* background-color: rgba(233, 15, 15, 0.7); */
+       background: rgba(0, 0, 0, 0.1); 
+            box-sizing: border-box;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      flex: 1;
+      color:white;
+     border-radius: 25px;
+    }
+
+    .form-container input[type="email"]:hover {
+      background-color: rgba(65, 65, 65, 0.13);
+      transform: scale(1.02);
+    }
+
+.frm-aln{
+	display: flex;
+	justify-content: center;
+}
+    .submit-btn {
+      background-color: transparent;
+      color: #ffa500;
+      border: 1px solid #d5803b;
+      padding: 10px 30px 10px 30px;
+      font-size: 17px;
+      cursor: pointer;
+     border-radius: 30px;
+      transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background-color: #ffa500;
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    /* For responsiveness */
+   @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+      .form-row {
+        display: flex;
+        padding: 5px;
+        flex-direction: column;/*changess----------*/
+      }
+
+      .submit-btn {
+        width: 40%;
+        padding: 12px;
+      }
+    }
+/*footer section */
+.footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+.footer-section {
+    flex: 1;
+   
+}
+
+.footer-logo img.logo-image {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: auto;
+}
+
+.footer-logo p {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+    font-size: 18px;
+}
+
+.footer-links a:hover {
+    color: #ff6f61;
+}
+
+.footer-social .social-icon {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.footer-social .social-icon:hover {
+    color: #ff6f61;
+}
+
+.footer-bottom {
+    background-color: #000;
+    font-size: 0.9em;
+   }
+   .footer-bottom  p{
+     margin:0px;
+     padding: 10px;
+font-weight: 600;
+     }
+ @media only screen and (min-device-width: 320px) and (max-device-width: 768px){
+ .footer-bottom  p{
+     margin:0px;
+       font-size: 12px;
+         padding: 6px;
+     }
+   .footer-logo img.logo-image {
+    margin-top: 12px;
+    }
+   .footer-social .social-icon {
+  margin-bottom: 15px;
+}
+}
+
+
+.social-icon {
+  display: inline-block; /* Ensures icons behave as inline-block elements */
+  width: 40px; /* Adjust the size as needed */
+  height: 40px;
+  margin: 10px;
+  border-radius: 50%; /* Makes icons circular */
+      overflow: visible; /* Ensures any overflow is hidden */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.social-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fits inside the circle */
+  transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.social-icon:hover {
+  transform: scale(1.2); /* Enlarges the icon on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Adds a shadow effect */
+}
+
+.social-icon:hover img {
+  transform: scale(1.1); /* Slight zoom effect for the image itself */
+}
+
+/* General styles for gallery container */
+.gallery-container {
+    padding: 35px;
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 991px) {
+    .gallery-section .img-box {
+        flex: 0 0 50%; /* Display 2 items per row */
+        max-width: 50%;
+    }
+
+    .header-section h1 {
+        font-size: 2rem; /* Adjust header size for tablets */
+    }
+
+    .header-section p {
+        font-size: 1rem; /* Adjust description size */
+    }
+}
+
+/* Responsive styles for mobile */
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+    .gallery-section .img-box {
+        flex: 0 0 100%; /* Display 1 item per row */
+        max-width: 100%;
+        margin-bottom: 15px; /* Add spacing between items */
+    }
+
+    .header-section h1 {
+        font-size: 38px; /* Adjust header size for mobile */
+        fount-weight: 700;
+    }
+
+    .header-section p {
+        font-size: 18px; /* Adjust description size */
+        font-weight: 600;
+    }
+
+    .gallery-img {
+        width: 100%; /* Ensure images are responsive */
+       
+    }
+
+    .more-button {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .more-button a {
+      padding: 10px 20px;
+        font-size: 1rem;
+        border: 1px solid #ffa500;
+        border-radius: 5px;
+        background-color: #ffa500;
+        text-decoration: none;
+        color: #333;
+        display: inline-block;
+   
+    }
+
+    .more-button a:hover {
+        background-color: #700205;
+        color: #fff;
+    }
+}
+
+@media screen (max-width: 767px){
+   .video-section  {
+    display:flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+   justify-content: center;
+}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+      .footer-content {
+        flex-direction: column;
+        align-items: center;
+      }
+      .footer-logo img {
+        max-width: 200px;
+      }
+      .footer-links a {
+       /* display: block; */
+        margin: 5px 0;
+         padding: 5px;
+      }
+      .footer-social img {
+        width: 40px;
+        margin: 5px;
+      }
+      .footer-bottom {
+        font-size: 12px;
+      }
+    }
+
+       .banner {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        color: white;
+    }
+
+    /* Navigation Bar */
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 5%;
+        background-color:#0000003b;
+        position: absolute;
+        width: 100%;
+        z-index: 10;
+        height: 80px; /* Reduced height */
+        padding-top: 20px;
+    }
+
+    .logo img {
+        max-width: 103%;
+        max-height: 70px; /* Logo size adjustment */
+    }
+.logo {
+width: 25%;
+}
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+    }
+
+    ul li {
+        position: relative;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        padding: 8px 12px; /* Reduced padding */
+        transition: color 0.3s ease;
+    }
+
+    ul li a:hover {
+        color: #f0a500;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        top: 30px;
+        left: 0;
+        min-width: 150px;
+        z-index: 100;
+    }
+
+    .dropdown-content a {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        display: block;
+        font-size: 14px;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #444;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Responsive Navigation */
+    .toggle-btn {
+        display: none;
+        font-size: 20px;
+        color: white;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .menu {
+        display: flex;
+
+    }
+
+     @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+        .toggle-btn {
+            display: block;
+            font-size: 30px; /* Larger toggle button */
+        }
+
+        .menu {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px; /* Adjusted to fit below the navbar */
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 10;
+            height: auto; /* Adjust height to fit menu content */
+        }
+
+        .menu.active {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        ul {
+            flex-direction: column;
+            text-align: center;
+            gap: 5px; /* Reduced gap between items */
+        }
+
+        ul li a {
+            font-size: 14px; /* Smaller font size for mobile */
+            padding: 10px 15px; /* Adjusted padding */
+            line-height: 1.2; /* Reduced line-height to make it more compact */
+        }
+
+        .dropdown-content {
+            width: 100%;
+        }
+
+        .dropdown-content a {
+            padding: 12px; /* Adjusted padding for dropdown */
+        }
+
+        /* Remove any unwanted height from the menu */
+        .menu {
+            height: auto; /* Ensure it doesn't stretch to full screen height */
+        }
+
+        /* Reduce space between menu items */
+        ul li a {
+            padding: 10px 15px; /* Adjust padding to make it more compact */
+            font-size: 14px; /* Reduced font size */
+        }
+
+        /* Ensure the background video doesn't cover the menu */
+        .background-video {
+            height: 100%; /* Ensure video height is set properly */
+        }
+    }
+
+    /* Video Background */
+    .background-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Hero Content */
+    .content123 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        
+    }
+
+    .content123 h1 {
+        font-size:60px;
+        margin-bottom: 20px;
+    }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px){
+    .content123 h1 {
+     font-size: 35px;
+   margin-top: 30px;
+}
+.content123 button {
+      font-size:20px;
+       height: 40px;
+}
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    .content123 h1 {
+     font-size: 60px;
+    margin-top: 30px; /*changes 123*/
+}
+}
+    .content123 button {
+        /*padding: 10px 20px;*/
+        font-size: 20px;
+        background: #f0a500;
+        border: none;
+        color: #333;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      padding: 8px 80px;
+    margin-bottom: 250px;
+    font-weight: bold;
+    
+    }
+
+    .content123 button:hover {
+        background: #e08900;
+    }
+.Demo{
+display: none !important;
+}
+<!-------------sponsers section----------->
+.sponsors-section {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.container1 {
+  max-width: 1200px;
+  margin: 0 auto;
+   display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content:center;
+}
+
+.section-heading {
+  font-size: 42px;
+  font-weight: 700;
+  color: #d5803b;
+  margin-bottom: 20px;
+  margin-top: 60px;
+  text-align:center;
+}
+
+.section-description {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 30px;
+  line-height: 1.8;
+  text-align: center;
+  padding: 0px 30px 0px 30px;
+}
+
+.sponsor-logos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+}
+
+.sponsor-img {
+  width: 160px;
+  height: 100px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.sponsor-img:hover {
+  transform: scale(1.1);
+}
+
+.sponsor-button {
+  display: block;
+  font-weight: bold;
+  font-family: "Josefin Slab", serif;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #000;
+  background-color: orange;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+ margin:auto;
+}
+
+.sponsor-button:hover {
+ color:white;
+  background-color: #700205;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: 1.5rem;
+  }
+
+  .section-description {
+    font-size: 0.9rem;
+  }
+
+  .sponsor-img {
+    width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-heading {
+        font-size: 38px;
+        color: #d5803b;
+        font-weight: 700;  
+}
+
+  .section-description {
+        font-size: 18px;
+        font-weight: 600;
+        color: #000000;
+  }
+
+  .sponsor-img {
+    width: 100px;
+  }
+}
+
+<!-------------sponsers section----------->
+<!---owner info -->
+/* Section Styles */
+.owner-section {
+  padding: 50px 20px;
+  background-color: #ffffff;
+}
+
+.owner-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Left Section */
+.owner-info {
+  flex: 1;
+  max-width: 500px;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: left !important;
+margin: 0px 0px 0px 40px;
+}
+
+.owner-heading {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #d5803b;
+  text-align: left;
+}
+
+.owner-description {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #000000;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.owner-button {
+  background-color: orange;
+      font-family: "Josefin Slab", serif;
+  color: black;
+  font-weight: 800;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.owner-button:hover {
+  background-color: #700205;
+ color:white;
+}
+
+/* Right Section */
+.owner-images {
+  position: relative;
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.large-image {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   margin: 0px 0px 0px 60px;  
+}
+
+.small-image {
+  position: absolute;
+  width: 250px; /* Slightly larger size */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  bottom: -20px; /* Positioned at the bottom of the large image */
+}
+
+.small-image1 {
+  left: 15%; /* Aligned to the left */
+  transform: translate(-50%, 0); /* Overlapping effect */
+}
+
+.small-image2 {
+  right: 20%; /* Aligned to the right */
+  transform: translate(50%, 0); /* Overlapping effect */
+}
+
+/* Responsive Styles */
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+  .owner-container {
+    display: flex;
+    flex-direction: column-reverse;
+    }  }
+
+  .owner-info, .owner-images {
+    max-width: 100%;
+    text-align: center;
+   margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .large-image {
+    margin-left: 0px;
+    max-width: 300px;
+  }
+
+  .small-image {
+    width: 215px;
+    bottom: -15px;
+  }
+
+  .small-image1 {
+    left: 50%;
+  }
+
+  .small-image2 {
+    right: 25%;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px){
+  .owner-heading {
+        text-align: center; /* Center aligns the text */
+    margin-left: 45px;
+    font-size: 38px;
+  }
+
+  .owner-description {
+    font-size: 0.9rem;
+  }
+
+  .owner-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .large-image {
+    max-width: 250px;
+  }
+
+  .small-image {
+    width: 180px;
+    bottom: -50px;
+  }
+
+  .small-image1 {
+    left: 30%;
+  }
+
+  .small-image2 {
+    right: 30%;
+  }
+}
+
+
+
+<!---owner info -->
+<!---news section -->
+    .latest-news {
+        display: flex;
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .latest-section {
+        text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .latest-section h2 {
+      font-size: 42px;
+      font-weight: 700;
+      color: #d5803b;
+      margin-bottom: 10px;
+    }
+
+    .latest-section p {
+      font-size: 18px;
+      color: #000000;
+    }
+
+    .see-all-btn {
+      font-family: "Josefin Slab", serif;
+      font-weight: 600;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: orange;
+      color: black;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .see-all-btn:hover {
+      background-color: #700205;
+        color: white;
+    }
+    
+    .latest-news-one{
+          z-index: 9999;
+          margin-right: -138px;
+         margin-top: 15px;
+         margin-left: 85px;
+    }
+    
+    
+    .latestgrid-news {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      background-color: white;
+      padding-bottom: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+      border-radius: 15px;
+     width: 100%;
+     margin-bottom: 80px;
+    }
+
+   
+    .latestnews-item {
+      background: #000000;
+      color: #f9f9f9;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .latestnews-item img {
+     width: 100%;
+    height: 220px;
+    object-fit: cover
+    }
+
+    .latestnews-item p {
+      padding-top: 10px;
+      font-size: 18px;
+      text-align: center;
+    }
+    .photolarge-news img{
+     height: 420px;
+    width: 71%;
+    border-radius: 15px;
+    margin-left: 190px;
+    margin-top: 73px;
+    }
+
+   
+    .latestnews-item-large img {
+      height: 250px; 
+    }
+
+      @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+      .latestgrid-news {
+        height: 270px;
+        display: none;
+      }
+.latest-section{
+text-align: center;
+}
+  .latest-news{
+display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 35px 0px 35px 0px;
+    background: #e2e2e2;
+    justify-content: center;
+}
+  .latestnews-item-large img {
+        height: 200px; 
+      }
+      .latest-section h2 {
+        font-size: 1.5rem;
+       font-weight: 700;
+       color: #d5803b;
+       justify-self: center;
+        margin-bottom: 10px;
+   
+      }
+
+      .latest-section p {
+        font-size: 0.9rem;
+       justify-self: center;
+      }
+      .see-all-btn {
+        font-size: 18px;
+        font-weight: 600;
+        padding: 8px 16px;
+      }
+    .latest-two-section {
+        height: 200px; 
+      }
+ .photolarge-news img {
+        height: 200px; 
+       display: none;
+      
+      }
+   .latest-news-one{
+     margin: 0px;
+     padding:10px 10px 10px 10px;
+     }
+.latest-news-one{
+        
+          margin-right: 0px;
+         
+    }
+.latestnews-item1010{
+display: none;
+}
+
+  
+    }
+
+  
+
+  @media only screen and (min-device-width: 820px) and (max-device-width: 1180px){
+   .photolarge-news img {
+           display: none;
+           }
+     .latest-news{
+     padding: 30px;
+     justify-content: center;
+   }
+ .latestnews-item{
+width: 350px;
+}
+.latest-section h2{
+justify-self:center;
+}
+.latest-section p{
+justify-self:center;
+}
+.see-all-btn {
+justify-self: center;
+display: block;
+}
+.button-link{
+justify-self:center;
+}
+.image-container img{
+width: 100%;
+height: 100px;
+}
+.second-section {
+height: 220px;
+padding-left: 0px;
+gap: 10px;
+}
+.video-section{
+    padding: 30px;
+}
+.video-yt-link-heding {
+    justify-items: center;
+}
+.latest-news-one{
+    margin-right: 0px;
+}
+     }
+
+
+
+
+/* youtube video section link heading code start */
+.video-yt-link-heding {
+  width: 100%;
+ /* padding: 20px; */
+  /* background-color: #f4f4f4; */
+}
+
+/* Style the video-yt-section-link div to ensure it's at the top */
+.video-yt-section-link {
+  display: flex;
+  justify-content: flex-start; /* Align the content to the left */
+  align-items: flex-start; /* Align the content to the top */
+  margin: 0; /* Remove any margin */
+  padding: 0; /* Remove any padding */
+}
+
+/* Style the h1 inside the div */
+.video-yt-section-link h1 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #d5803b;
+  margin: 0; /* Remove default margin from h1 */
+  padding: 10px; /* Remove padding from h1 */
+}
+
+
+
+ 
+<!---news section -->
+
+/* General Styles for the Section */
+.content-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: nowrap; /* Prevents wrapping */
+}
+
+.left-side,
+.right-side {
+  flex: 1; /* Each side takes equal space */
+  padding: 10px;
+}
+
+.left-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-side img {
+  width: 50%; /* Ensures image takes up 100% of the container's width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensures the image fits well inside the container */
+  border-radius: 10px; /* Optional: adds rounded corners */
+  margin: -2px 0px 0px 0px;
+}
+
+.right-side {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.right-side h2 {
+    margin-bottom: 18px;
+    font-size: 38px;
+    font-weight: 700;
+    color: #d5803b;
+}
+
+.right-side p {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    padding-right: 167px;
+    text-align: justify;
+}
+
+.right-side button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #000000;
+    background-color: #FFA500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.right-side button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Adjustments for Tablets and Smaller Devices */
+@media (max-width: 1024px) {
+  .content-section {
+    flex-direction: column; /* Stack the content vertically */
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%; /* Both sections take full width */
+  }
+
+  .left-side img {
+    width: 80%; /* Adjust image size on tablets */
+    margin-bottom: 20px; /* Adds space between the image and the description */
+  }
+
+  .right-side {
+    text-align: center; /* Center the text on tablets */
+  }
+
+  .right-side h2 {
+    font-size: 1.5em;
+  }
+
+  .right-side p {
+   margin-bottom: 15px;
+        font-size: 18px;
+        font-weight: 700;
+        padding-right: 35px;
+        text-align: justify;
+  }
+}
+
+/* Further adjustments for mobile devices */
+@media (max-width: 768px) {
+  .left-side img {
+   width: 75%; /* Ensures the image takes full width on smaller screens */
+  }
+
+  .right-side h2 {
+    font-size: 38px;
+    padding: 0px 0px 0px 40px;
+  }
+
+  .right-side p {
+    font-size: 18px;
+        padding: 0px 40px 0px 40px;
+  }
+
+  .right-side button {
+    font-size: 0.9em;
+    padding: 8px 16px;
+    margin: 0px 0px 0px 40px;
+  }
+}
+
+<!-- blog section -->
+.blog-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+   background-color: #e2e2e2;
+   padding-bottom: 30px;
+}
+
+.blog {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+    background: #f9f9f9;
+margin-bottom: 30px;
+}
+
+.blog img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+}
+
+.blog h3 {
+    margin: 10px;
+    padding: 10px;
+font-size: 26px;
+    font-weight: bold;
+}
+
+.blog p {
+    margin: 10px;
+    color: #000000;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.read-more {
+    display: block;
+    margin: 10px auto 25px;
+    padding: 8px 16px;
+    background: #ffa500;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    background: #7d030b;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup.hidden {
+    display: none;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh; /* Set a maximum height for the popup */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds max height */
+    position: relative;
+    text-align: left;
+}
+
+.popup-content p {
+    font-size: 18px;
+    color: #000000;
+    line-height: 1.5;
+}
+
+#popup-image {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 35px;
+    cursor: pointer;
+    color: black;
+}
+@media (max-width: 768px) {
+    .blog-container {
+        gap: 10px;
+    }
+    .blog {
+        max-width: 100%;
+        margin: 50px;
+    }
+}
+
+<!-- blog section -->
+
+
+
+<!--Driver section-->
+</style>
+<style>
+.latestnews-item1010 {
+  background: #000000;
+  color: #f9f9f9;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border: 15px solid white; /* Add white border of 10px */
+  position:relative;
+  left:-70px;
+  margin-top: 160px;
+}
+
+.latestnews-item1010 img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.latestnews-item1010 p {
+  padding-top: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+@media only screen and (max-width:767px){
+.logo{
+width:75%;
+}}
+
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .content-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    background-color: white;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 15px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 320px) and (max-height: 642px) {
+  .content-section {
+    flex-direction: column;
+  }
+}
+
+
+/* Section Styles */
+.driver-section {
+  padding: 50px 20px;
+  background-color: #ffffff;
+}
+
+.driver-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+ flex-direction: row-reverse;
+}
+
+/* Left Section */
+.driver-info {
+  flex: 1;
+  max-width: 500px;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: left !important;
+  margin: 0px 0px 0px 98px;
+}
+
+.driver-heading {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #d5803b;
+}
+
+.driver-description {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #000000;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.driver-button {
+  background-color: orange;
+  font-family: "Josefin Slab", serif;
+  color: black;
+  font-weight: 800;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.driver-button:hover {
+  background-color: #700205;
+  color: white;
+}
+
+/* Right Section */
+.driver-images {
+  position: relative;
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+   padding-right: 159px;
+}
+
+.large-image {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0px 0px 0px 0px;
+}
+
+.small-image {
+  position: absolute;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  bottom: -20px;
+}
+
+.small-image1 {
+  left: 15%;
+  transform: translate(-50%, 0);
+}
+
+.small-image2 {
+  right: 20%;
+  transform: translate(50%, 0);
+}
+
+/* Responsive Styles */
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+  .driver-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .driver-info, .driver-images {
+    max-width: 100%;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .large-image {
+    margin-left: 0px;
+    max-width: 300px;
+  }
+
+  .small-image {
+    width: 215px;
+    bottom: -15px;
+  }
+
+  .small-image1 {
+    left: 50%;
+  }
+
+  .small-image2 {
+    right: 25%;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+  .driver-heading {
+    text-align: center;
+    margin-left: 6px;
+    font-size: 38px;
+  }
+  .owner-heading {
+        text-align: center; /* Center aligns the text */
+    margin-left: 0px;
+    font-size: 38px;
+  }
+  .driver-description {
+    font-size: 0.9rem;
+  }
+
+  .driver-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .large-image {
+    max-width: 250px;
+  }
+
+  .small-image {
+    width: 180px;
+    bottom: -50px;
+  }
+
+  .small-image1 {
+    left: 30%;
+  }
+
+  .small-image2 {
+    right: 30%;
+  }
+}
+
+/* Wrap container for additional images */
+.additional-images-container {
+  display: flex;
+  justify-content: center; /* Center images horizontally */
+  gap: 15px; /* Add space between images */
+  margin-top: 15px; /* Add some margin above the images */
+}
+
+/* Style for each additional image */
+.additional-image {
+  width: 49%;
+  border-radius: 8px;
+  object-fit: cover; /* Ensure proper aspect ratio */
+}
+.team-cars-btn .button-link {
+    font-weight: bold;
+}
+
+.button-link  {
+    color:white;
+    text-decoration: none;
+}
+ .button-link:hover {
+    background-color: #7d030b;
+    color:white;
+  }
+
+
+/*  Barbara Section */
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+    color: #D5803B;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 700;
+        }
+        p {
+font-size: 18px;
+    color: #000000;
+    line-height: 1.6;
+    font-weight: 600;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        @media (max-width: 600px) {
+            .gallery {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+        }
+
+
+/*  Barbara Section */
+
+/* Disclaimer Section */
+
+
+/* Disclaimer Button */
+    .disclaimer-btn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: #ffa500;
+    color: #000;
+    padding: 5px 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: 700;
+    margin: 0 5px 83px 0;
+    transition: background 0.3s ease-in-out;
+}
+
+.disclaimer-btn:hover {
+    background: #e68a00; /* Darker orange when hovered */
+}
+
+/* Popup Overlay */
+.popup-overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+    z-index: 1000;
+}
+
+/* Popup Content */
+.popup-content {
+    background: white;
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    text-align: left;
+    position: relative;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+    animation: slideUp 0.3s ease-in-out;
+}
+
+/* Slide-up animation for the popup */
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Popup Heading */
+.popup-content h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #000;
+    font-weight: 700;
+}
+
+/* Popup Paragraph */
+.popup-content p {
+    font-size: 18px;
+    color: #000;
+    line-height: 1.5;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: red;
+    background: none;
+    border: none;
+}
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 600px) {
+    .popup-content {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .popup-content h2 {
+        font-size: 16px;
+    }
+
+    .popup-content p {
+        font-size: 14px;
+    }
+}
+
+/*================ fitting button for 2 gallery ======= */
+.fitting-button {
+    margin: 12px;
+    background-color: orange;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+
+  .fitting-button a{
+    text-decoration: none;
+    color:white !important;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  .fitting-button:hover {
+    background-color: #7d030b;
+    color:white !important;
+  }
+
+  /*======================= blog view more button ====================== */
+   .all-blogsbuttonview {
+    background-color: #e2e2e2; /* Light gray background */
+    text-align: center; /* Centers the button */
+    padding: 20px; /* Adds space inside the div */
+    border-radius: 10px; /* Optional: Rounded corners for the div */
+}
+
+.all-updates {
+    padding: 10px 20px;
+    background-color:#FFA500;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.all-updates:hover {
+    background-color:#7d030b;
+}
+
+  
+
+
+</style>
+</head>
+ <header>        
+<!-- Hero Section -->
+<div class="banner">
+    <!-- Navigation Bar -->
+    <nav>
+       <div class="logo">
+    <a href="https://mrskipracing.com/">
+        <img src="images/skip-logo.png" width="250" height="80" alt="logo" />
+    </a>
+</div>
+        <button class="toggle-btn" onclick="toggleMenu()">☰</button>
+       <ul class="menu">
+          <li><a href="https://mrskipracing.com/">Home</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+</ul>
+    </nav>
+
+  <div class="banner">
+    <!-- Video Background -->
+    <video autoplay loop muted playsinline class="background-video" id="background-video">
+        <source src="images/Hero-video.mp4" type="video/mp4" />
+        <source src="images/Hero-video.webm" type="video/webm" />
+        <source src="images/Hero-video.ogv" type="video/ogv" />
+        Your browser does not support the video tag.
+    </video>
+    <!-- Fallback Image -->
+    <div class="fallback-image"></div>
+</div>
+
+
+    <!-- Hero Content -->
+    <div class="content123">
+        <h1>Mr. Skip Racing</h1>
+    </div>
+</div>
+</header>
+<body>
+<p class="Demo">&nbsp;</p>
+<!--owner info -->
+<section id="owner" class="owner-section">
+<div class="owner-container"><!-- Left Section -->
+<div class="owner-info">
+<h2 class="owner-heading">Driver Profile</h2>
+<p class="owner-description" style="text-align: justify;">Jeremy R. Herbert, the current driver of the "Masterpiece" Camaro, is an experienced racer with an IHRA Competition Driver's License. Competing in Top Door-Slammer and Super-Pro classes, he has achieved notable results, including two runner-up finishes by the end of 2024. A fan favorite and respected by fellow drivers, Jeremy aims to secure his NHRA Competition Driver's License in 2025 and is determined to reach the Winners Circle.</p>
+<a href="about-us.html"> <button class="owner-button">Read More</button> </a></div>
+<!-- Right Section -->
+<div class="owner-images"><img class="large-image" src="images/Jeremy2.jpg" alt="Owner" /></div>
+</div>
+</section>
+<!---owner info -->
+<p>&nbsp;</p>
+<!--Driver profile
+<section class="content-section" style="display: flex;">
+<div class="left-side"><img src="images\Jeremy2.jpg" alt="Descriptive Alt Text" /></div>
+<div class="right-side">
+<h2>Driver Profile</h2>
+<p>Jeremy R. Herbert, the current driver of the "Masterpiece" Camaro, is an experienced racer with an IHRA Competition Driver's License. Competing in Top Door-Slammer and Super-Pro classes, he has achieved notable results, including two runner-up finishes by the end of 2024. A fan favorite and respected by fellow drivers, Jeremy aims to secure his NHRA Competition Driver's License in 2025 and is determined to reach the Winners Circle.</p>
+<a href="about-us.html"> <button class="profile-button">Read More</button> </a></div>
+</section> -->
+<p>&nbsp;</p>
+<!--Driver profile-->
+<p>&nbsp;</p>
+<!---news section -->
+<section class="latest-news" style="display: flex; flex-direction: row; align-items: center; padding: 35px 80px 35px 80px; background: #e2e2e2;">
+<div class="latest-news-one">
+<div class="latest-section">
+<h2>"Mr. Skip Racing" Latest News</h2>
+<p>Find out all the latest news from the Team</p>
+<button class="see-all-btn team-cars-btn"> <a class="button-link" href="latest-news.html">Our Team Cars</a> </button> <button class="see-all-btn"> <a class="button-link" href="contact.html">Good Racing Links</a> </button> <!---news button add --> <button class="fitting-button"> <a href="https://mrskipracing.com/gallery2.html">Fitting Engine </a> </button><!---news button add end code --></div>
+<div class="latestgrid-news">
+<div class="latestnews-item"><img src="images/family.jpg" alt="L&eacute;na B&uuml;hler" />
+<p>Team / Family Group</p>
+</div>
+<div class="latestnews-item"><img src="images/team.jpg" alt="GEN3 Evo" />
+<p>Team</p>
+</div>
+</div>
+</div>
+<div class="latest-two-section">
+<div class="photolarge-news"><img src="images/DSC_1.jpg" alt="Team Image" /></div>
+</div>
+</section>
+<!-- Blog Section -->
+<section class="blog-section">
+<div class="blog-container"><!-- New Blog 9 -->
+<div class="blog"><img src="images/blogmarch.jpeg" alt="Blog 9" />
+<h3>March 25, 2025 - Final Stages of the Front-End Conversion</h3>
+<p>After months of hard work, the front-end conversion is nearly complete! With only a few minor tasks left, the car is coming together beautifully</p>
+<button class="read-more" data-blog="9">Read More</button></div>
+<!-- New Blog 8 -->
+<div class="blog"><img src="images/blog8.jpg" alt="Blog 8" />
+<h3>March 12, 2025 - Moving Right Along</h3>
+<p>Lynn has completed the Funny Car Cage and steering wheel that Jeremy wanted,</p>
+<button class="read-more" data-blog="8">Read More</button></div>
+<div class="blog"><img src="images/feb182025.png" alt="Blog 7" />
+<h3>February 18, 2025 - Update on Masterpiece Progress</h3>
+<p>Engine fit perfectly on the first trial no adjustments needed.</p>
+<button class="read-more" data-blog="7">Read More</button></div>
+<div class="blog"><img src="images/gallery01.jpeg" alt="Blog 6" />
+<h3>February 15, 2025 - Update on Masterpiece Progress</h3>
+<p>Engine fit perfectly on the first trial no adjustments needed. First time seeing the car since October 2024...</p>
+<button class="read-more" data-blog="6">Read More</button></div>
+<div class="blog"><img src="images/blog5.1.jpeg" alt="Blog 0" />
+<h3>February 7, 2025 - Progress on Masterpiece!</h3>
+<p>Getting ready to fit the engine and transmission in place for measurements.</p>
+<button class="read-more" data-blog="5">Read More</button></div>
+<!-- New Blog 1 -->
+<div class="blog"><img src="images/blog4.jpeg" alt="Blog 1" />
+<h3>February 1, 2025 - Progress on Masterpiece!</h3>
+<p>The struts and rack are mocked up and Lynn came over and picked up the fuel tank and radiator so that ...</p>
+<button class="read-more" data-blog="4">Read More</button></div>
+<!-- Blog 2 --> <!--<div class="blog"><img src="images/img9.jpeg" alt="Blog 2" />
+<h3>January 21, 2025 - Update on Masterpiece Progress</h3>
+<p>Today was a record-setting snow day in South Louisiana. I woke up to just over 2" of snow on the ground...</p>
+<button class="read-more" data-blog="1">Read More</button></div> --> <!-- Blog 3 --> <!-- <div class="blog"><img src="images/MS.jpg" alt="Blog 3" />
+<h3>Dec. 26, 2024 Update On Masterpiece upgrade</h3>
+<p>We have not made much progress on the front of the car, but a lot of planning and changes of course have...</p>
+<button class="read-more" data-blog="2">Read More</button></div> --> <!-- Blog 4 --> <!-- <div class="blog"><img src="images/fab1.jpg" alt="Blog 4" />
+<h3>October 22, 2024 - Update on Masterpiece Progress</h3>
+<p>After our last trip to SCR on August 9, 2024, to let my daughter Cynthia see the car make a pass, we pulled...</p>
+<button class="read-more" data-blog="3">Read More</button></div>--></div>
+<div class="all-blogsbuttonview"><a href="https://mrskipracing.com/blogs.html"> <button class="all-updates">View all Blogs</button> </a></div>
+</section>
+<p>&nbsp;</p>
+<!-- Blog Popup -->
+<div id="blog-popup" class="popup hidden">
+<div class="popup-content"><span class="close-btn">&times;</span> <img id="popup-image" alt="Blog Image" />
+<h3 id="popup-title">Blog Title</h3>
+<p id="popup-description">Full blog content will appear here.</p>
+</div>
+</div>
+<!-- Blog Section -->
+<p>&nbsp;</p>
+<!---news section -->
+<p class="Demo">&nbsp;</p>
+<!--images gallary section more -->
+<div class="container gallery-container"><!-- Header Section with Stylish Design -->
+<div class="row header-section">
+<div class="col-12 text-center">
+<h1 class="display-4">1-15-24 Sugar Cane Shoot-out +</h1>
+<p>Some Photos Taken from Nov. 2023- Jan. 2024</p>
+</div>
+</div>
+<!-- Image Gallery Section  -->
+<div class="row gallery-section"><!-- Image items - 4 per row -->
+<div class="img-box col-lg-3 col-md-6 col-sm-12">
+<div class="card gallery-item"><img class="gallery-img" src="images/car1.jpg" alt="mr.skipracing" data-caption="Ford Mustang" />
+<div class="caption"><strong>Masterpiece</strong> - 1969 Camaro - 565 CID BBC</div>
+</div>
+</div>
+<div class="img-box col-lg-3 col-md-6 col-sm-12">
+<div class="card gallery-item"><img class="gallery-img" src="images/g35.jpg" alt="mr.skipracing" data-caption="Ford Mustang" />
+<div class="caption">&nbsp;</div>
+</div>
+</div>
+<div class="img-box col-lg-3 col-md-6 col-sm-12">
+<div class="card gallery-item"><img class="gallery-img" src="images/car3.jpg" alt="mr.skipracing" data-caption="Ford Mustang" />
+<div class="caption">&nbsp;</div>
+</div>
+</div>
+<div class="img-box col-lg-3 col-md-6 col-sm-12">
+<div class="card gallery-item"><img class="gallery-img" src="images/car10.jpg" alt="mr.skipracing" data-caption="Ford Mustang" />
+<div class="caption">&nbsp;</div>
+</div>
+</div>
+<!-- Additional rows of images (same structure) -->
+<div class="img-box col-lg-3 col-md-6 col-sm-12">
+<div class="card gallery-item"><img class="gallery-img" src="images/DSC_1.jpg" alt="mr.skipracing" data-caption="Ford Mustang" />
+<div class="caption">Skip and Houston</div>
+</div>
+</div>
+<div class="img-box col-lg-3 col-md-6 col-sm-12">
+<div class="card gallery-item"><img class="gallery-img" src="images/friend12.jpg" alt="mr.skipracing" data-caption="Ford Mustang" />
+<div class="caption">Faroah &amp; Son</div>
+</div>
+</div>
+<div class="img-box col-lg-3 col-md-6 col-sm-12">
+<div class="card gallery-item"><img class="gallery-img" src="images/g24.jpg" alt="mr.skipracing" data-caption="Ford Mustang" />
+<div class="caption">Ophelia &amp; Barbara</div>
+</div>
+</div>
+<div class="img-box col-lg-3 col-md-6 col-sm-12">
+<div class="card gallery-item"><img class="gallery-img" src="images/G2.jpg" alt="mr.skipracing" data-caption="Ford Mustang" />
+<div class="caption">the boys</div>
+</div>
+</div>
+</div>
+<!-- More Button -->
+<div class="more-button"><a href="Gallery.html">View more</a></div>
+</div>
+<!---video section---->
+<div class="youtube-video-section">
+<div class="container-video-section"><!-- First Section: Video with Anchor Link -->
+<div class="video-section"><!-- First Section: Video with Anchor Link -->
+<section class="video-yt-link-heding">
+<div class="video-yt-section-link">
+<h1>MR.Skip racing Videos</h1>
+</div>
+</section>
+<div class="first-section"><video controls="controls" width="300" height="auto">
+                <source src="images/Hero-video.mp4" type="video/mp4">
+            </video></div>
+<!-- Second Section: Images with Anchor Tags to Video Links -->
+<div class="second-section">
+<div class="image-container"><a href="https://youtu.be/JW-CuQZ7D0w?si=UfvR53JCEEXnN2Y4"> <img src="images/car8.jpg" alt="Video 1" /></a>
+<div class="description">Ronnie Foret's 1st Test Pass (Partial) - 1-26-14 @ SCR</div>
+</div>
+<div class="image-container"><a href="https://youtu.be/fh7-S5iBftI?si=YRyI5AZ12VNi-o5N"> <img src="images/car1.jpg" alt="Video 2" /></a>
+<div class="description">Testing Sidepiece at SCR-</div>
+</div>
+<div class="image-container"><a href="https://youtu.be/mgJhBGKQnFQ?si=g-mHnrOq1p9yx5mw"> <img src="images/car5.jpg" alt="Video 4" /></a>
+<div class="description">Testing at State Capitol Raceway</div>
+</div>
+<div class="image-container"><a href="https://youtu.be/eKufnDdf1j8?si=h4JuQjmNhDyPxuAr"> <img src="images/car7.jpg" alt="Video 5" /></a>
+<div class="description">Side-Piece Testing At State Capitol Raceway</div>
+</div>
+</div>
+</div>
+</div>
+<!-------------sevice section-----------> <!--
+<div class="services-container">
+<h1>MR.Skip Racing Team Support</h1>
+<p>Teams that provide drivers with full support and crew management.</p>
+<div class="cardone">
+<div class="cardtwo">
+<h3>Trackside Assistance</h3>
+<p>Companies that offer on-site services at racing events, such as tire changes, fuel, or mechanical repair.</p>
+<button>Get Started &rarr;</button></div>
+<div class="cardtwo">
+<h3>Race Car Preparation</h3>
+<p>Websites or apps offering odds and betting opportunities for horse racing.</p>
+<button>Get Started &rarr;</button></div>
+<div class="cardtwo">
+<h3>Sim Racing</h3>
+<p>Online platforms where players race in virtual environments: Services offering high-end simulators for racing practice or competition.</p>
+<button>Get Started &rarr;</button></div>
+</div>
+</div>
+--> <!------------------------------------------------------video gallery--------------------->
+<p class="Demo">&nbsp;</p>
+<!-------------sponsers section-----------> <!--
+<section class="sponsors-section" style="background-color: white;">
+<div class="container1">
+<h1 class="section-heading">Our Esteemed Car Racing Sponsors</h1>
+<p class="section-description">We proudly collaborate with some of the most renowned brands in the car racing industry. Their support drives us toward success on the tracks. Check out our key sponsors below.</p>
+<div class="sponsor-logos"><img class="sponsor-img" src="images/sponsor4.jpg" alt="Sponsor 1" /> <img class="sponsor-img" src="images/sponsor6.png" alt="Sponsor 2" /> <img class="sponsor-img" src="images/sponsor3.jpg" alt="Sponsor 3" /> <img class="sponsor-img" src="images/patener4.jpg" alt="Sponsor 4" /><img class="sponsor-img" src="images/patner3.png" alt="Sponsor 6" /><img class="sponsor-img" src="images/patner2.png" alt="Sponsor 7" /></div>
+</div>
+--> <!-- sponsers section --> <!--<p class="Demo">&nbsp;</p>
+email  section
+<div class="email">
+<div class="email-container">
+<div class="email-header">
+<div class="header-text">
+<h1 style="font-family: 'Josefin Slab', sans-serif; font-size: 42px; font-weight: bold;">Welcome to Our mr.skip racing</h1>
+<p>We are glad to have you with us!</p>
+--></div>
+<!--Form Section with Horizontal Layout
+<div class="form-container"><form class="d-flex flex-column align-items-center frm-aln" action="#" method="post">
+<div class="form-row"><label for="email">Enter your email</label> <input id="email" name="email" required="" type="email" placeholder="Enter your email" /> <button class="submit-btn" type="submit">Submit</button></div>
+</form>-->
+<p>&nbsp;</p>
+<!--Barabar Section -->
+<div class="container">
+<h2>Crew Chief - Mrs. Barbara, AKA "Granny"</h2>
+<p>We call her, "The Tiger", because she loves her Grambling State University Tigers so much. Barbara and Skip have been racing as a team since early in their marriage. One of their first dates was at State Capitol Raceway, after attending a car show, Almost 40 years.</p>
+<p>Barbara is very sharp when it comes to the race car. She keeps up with all "the little things". She is also very good at "nagging" us about making sure we have all the things we need before we leave to go to the track. At the track, she makes sure we carry out the same routine each round, and not forget anything.</p>
+<p>During our runs, she is our camera person.</p>
+<p>When "Mrs. Barbara" is not there, our "Crew Chief" is truly missed!</p>
+<div class="gallery"><img src="images/barabar.jpg" alt="Mrs. Barbara at the track" /> <img src="images/barabar1.jpg" alt="Crew working on the car" /> <img style="height: 203px;" src="images/barabar2.jpg" alt="Mrs. Barbara in action" /> <img src="images/barabar3.jpg" alt="Team at the race" /></div>
+</div>
+<!--Barabar Section -->
+<p>&nbsp;</p>
+<!--owner info -->
+<section id="owner" class="owner-section">
+<div class="owner-container"><!-- Left Section -->
+<div class="owner-info">
+<h2 class="owner-heading">Meet the Owner</h2>
+<p class="owner-description" style="text-align: justify;">Oliver &ldquo;Mr. Skip&rdquo; Holbert, owner of the &ldquo;Masterpiece&rdquo; 1967 Camaro, is originally from Daytona Beach, Florida. He grew up attending the NASCAR races on the old Beach-Road Course on the beach in Daytona Beach. That was in the late 40&rsquo;s and until the new super speedway was built in the mid 50&rsquo;s. Mr. Skip entered the U.S. Navy in June 1956 and served 24 years before retiring as a Master Chief Electricians Mate (SS) Submarine Service.</p>
+<a href="about-us.html"> <button class="owner-button">Read More</button> </a></div>
+<!-- Right Section -->
+<div class="owner-images"><img class="large-image" src="images/mr.skipracing.jpg" alt="Owner" /></div>
+</div>
+</section>
+<!---owner info -->
+<p>&nbsp;</p>
+<!--------------------------------------footer--------------------- =======>--><footer class="footer">
+<div class="footer-content">
+<div class="footer-section footer-logo"><img class="logo-image" src="images/skip-logo.png" alt="Mr. Skip Racing Logo" /></div>
+<div class="footer-section footer-links"><a href="#">Home</a> | <a href="#owner">Owner Profile</a> | <a href="https://mrskipracing.com/contact.html">Contact Us</a></div>
+<button id="openPopup" class="disclaimer-btn">Disclaimer</button>
+<div id="popup" class="popup-overlay">
+<div class="popup-content"><button id="closePopup" class="close-btn">&times;</button>
+<h2>Disclaimer: Mr. Skip Racing.com (Oliver A. Holbert, Jr.)</h2>
+<p><strong>Notice of Rights</strong> All rights reserved. No part of this site, except the photos, may be reproduced or transmitted in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written or verbal permission of the webmaster. <br /><br /> <strong>Notice of Liability</strong> The information on this website is "as is," without warranty. While every precaution has been taken in the preparation of the site, neither the authors nor Holbert Enterprises shall have any liability for any loss or damage caused directly or indirectly by the site's information, software, or hardware products. <br /><br /> <strong>Trademark Usage</strong> Trademark names are used editorially without intention of infringement.</p>
+</div>
+</div>
+<div class="footer-section footer-social">&nbsp;</div>
+</div>
+<div class="footer-bottom">
+<p style="color: white;">&copy; 2024 Mr. Skip Racing. All rights reserved. Powered By <a style="color: white;" href="https://techimo.co/">Techimo</a></p>
+</div>
+</footer>
+<script>// <![CDATA[
+// 
+		
+document.addEventListener('DOMContentLoaded', function() {
+  let lastScrollY = window.scrollY;
+
+  window.addEventListener('scroll', function() {
+    const navbar = document.getElementById('navbar');
+    
+    if (window.scrollY > 50) { // When scrolled more than 50px
+      if (window.scrollY > lastScrollY) { // Scrolling down
+        navbar.classList.add('scrolled');
+      } else { // Scrolling up
+        navbar.classList.remove('scrolled');
+      }
+    } else {
+      navbar.classList.remove('scrolled'); // Reset to default if not scrolled
+    }
+
+    lastScrollY = window.scrollY; // Update lastScrollY
+  });
+});
+
+function toggleMenu() {
+        const menu = document.querySelector('.menu');
+        menu.classList.toggle('active');
+    }
+var swiper = new Swiper('.team-slider', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                }
+            }
+        });
+// ]]></script>
+<script>// <![CDATA[
+// <![CDATA[
+const popup = document.getElementById("blog-popup");
+const popupTitle = document.getElementById("popup-title");
+const popupDescription = document.getElementById("popup-description");
+const popupContent = document.querySelector(".popup-content");
+const closeBtn = document.querySelector(".close-btn");
+
+const blogData = {
+  1: {
+    title: "January 21, 2025 - Update on Masterpiece Progress",
+    content:
+      "Today was a record-setting snow day in South Louisiana. I woke up to just over 2\" of snow on the ground, and it just got heavier throughout the day. We accumulated around 6\" of snow, smashing the old late 1800's record of around 2\" in Baton Rouge, LA. There has been movement on the fabrication of the front of the car. We are a long way from being anywhere close to complete. In addition to the fab. Work, I have to install the fuel system and re-wire the whole front of the car. After the fab. work wiring, tuning of the new fuel system, and testing, we may be ready for Mr. Willie's Zydeco race at the end of March.",
+    image: "images/img8.jpeg",
+    additionalImages: ["images/img6.jpeg", "images/img7.jpeg"],
+  },
+  2: {
+    title: "Dec. 26, 2024 Update On Masterpiece upgrade",
+    content:
+      "We have not made much progress on the front of the car, but a lot of planning and changes of course have been made. I think for the better. Taking our time, ordering the correct parts, and spending wisely. I switched from EFI, after evaluating several models, to a carbureted AED alcohol system. This took a lot of time to decide also. The people at AED Performance were so easy to talk with and work with. The complete system they provided looks to be top-notch. My Transmission is back from TCI, certified and upgraded. The Torque Converter is back from COAN and is ready for another 7-8 years. Wow! That fuel line and AN fittings are expensive! We are trying to be ready for late February 2025 for testing and for Jeremy to get acclimated to the new changes.",
+    image: "images/MS.jpg",
+    additionalImages: [],
+  },
+  3: {
+    title: "October 22, 2024 - Update on Masterpiece Progress",
+    content:
+      "After our last trip to SCR on August 9, 2024, to let my daughter Cynthia see the car make a pass, we pulled the motor and transmission out and sent the transmission to be freshened-up at TCI and we sent the Torque Converter to COAN for a refresh. With all of the electronics removed and other toys, the body was sent to the FAB-SHOP for a major refresh of the car. The work is being done by Lynn Augustus. As time goes on I will give a few updates on the progress. The Transmission and Converter are both back. We have a new NHRA Cert on our Transmission case.",
+    image: "images/fab.jpg",
+    additionalImages: [],
+  },
+  4: {
+    title: "February 1, 2025 - Update on Masterpiece",
+    content:
+      "The struts and rack are mocked up and Lynn came over and picked up the fuel tank and radiator so that he can get the front spacing correct. While he was at my shop, he looked at the new fuel system and some of the other goodies that will go in the new configuration. I still think about all that new wiring that I have to get done. The car must be painted. That will take a lot of time away from the shop. My family is praying for people affected by the fires, hurricanes and other natural disasters, and now the two airplane tragedies. We hope all of you that read these words would join us in prayer and support for those affected victims and families.",
+    image: "images/blog4.jpeg",
+    additionalImages: [],
+  },
+  5: {
+    title: "February 7, 2025 - Progress Report Photos",
+    content:
+      "Getting ready to fit the engine and transmission in place for measurements.",
+    image: "images/blog5.jpeg",
+    additionalImages: ["images/blog5.1.jpeg"],
+  },
+  6: {
+    title: "February 15, 2025 - Update on Masterpiece Progress",
+    content: "This week started off great! We trial fit the engine into the front frame of our car, and everything fit like a glove. I was so happy. No bending, grinding, stretching, or cutting. Just a perfect fit. Oh, by the way, it was the first time I had seen the car since Oct. 2024.",
+    image: "images/gallery011.jpeg",
+    additionalImages: ["images/blog152025.jpeg","images/blog142025.jpeg"]
+  },
+  7: {
+    title: "February 18, 2025 Motor Plate Installation",
+    content: "Lynn shared exciting updates with photos of the newly installed motor plate. The fit and finish look perfect, ensuring a strong and stable setup. Another step closer to peak performance—everything is coming together smoothly!",
+    image: "images/gallery011.jpeg",
+    additionalImages: ["images/feb182025.png"]
+  },
+  8: {
+    title: "March 12, 2025, Moving Right Along",
+    content: "Lynn has completed the Funny Car Cage and steering wheel that Jeremy wanted, and he completed lowering the rear end that he (Lynn) insisted on doing to go along with the new lowered front end. The items remaining are the stainless steel fender-well exit headers and the lift-off/tilt front clip that I wanted. Then it will be off to the paint shop to be painted inside and out. I am still trying to figure out how to configure the front of the engine and do the wiring for all of our new systems. We are installing a Power Distribution Module (PDM) to manage everything. I plan to write a good series on installing the PDM, because I cannot find very much on the Internet.",
+    image: "images/blog8-2.jpg",
+    additionalImages: ["images/blog8-1.jpg"]
+  },
+  9: {
+    title: " March 25, 2025 -  Final Stages of the Front-End Conversion ",
+    content: "he car is in the final stages of the front end conversion. We only have a few minor items to finish, but like most projects, those last few things seem to be time consuming and I keep finding more things to do. Here are photos of the new headers. I really like them. Can't wait to hear the sound We have the fuel tank, radiator and front clip to mount. I added sone wheelie bar work and that should be it.  Hope the next report is at the finish line.",
+    image: "images/blogmarch.jpeg",
+    additionalImages: []
+  }
+};
+
+document.querySelectorAll(".read-more").forEach((button) => {
+  button.addEventListener("click", () => {
+    const blogId = button.getAttribute("data-blog");
+
+    popupTitle.textContent = blogData[blogId].title;
+    popupDescription.textContent = blogData[blogId].content;
+    document.getElementById("popup-image").src = blogData[blogId].image;
+
+    const existingContainer = document.querySelector(".additional-images-container");
+    if (existingContainer) existingContainer.remove();
+
+    if (blogData[blogId].additionalImages.length > 0) {
+      const container = document.createElement("div");
+      container.classList.add("additional-images-container");
+      blogData[blogId].additionalImages.forEach((imgSrc) => {
+        const imgElement = document.createElement("img");
+        imgElement.src = imgSrc;
+        imgElement.alt = "Additional Blog Image";
+        imgElement.classList.add("additional-image");
+        container.appendChild(imgElement);
+      });
+      popupContent.appendChild(container);
+    }
+    popup.classList.remove("hidden");
+  });
+});
+closeBtn.addEventListener("click", () => {
+  popup.classList.add("hidden");
+});
+popup.addEventListener("click", (e) => {
+  if (e.target === popup) {
+    popup.classList.add("hidden");
+  }
+});
+// ]]>
+// ]]></script>
+<!-- Disclaimer Popup -->
+<script>// <![CDATA[
+document.addEventListener("DOMContentLoaded", function () {
+            const popup = document.getElementById("popup");
+            const openBtn = document.getElementById("openPopup");
+            const closeBtn = document.getElementById("closePopup");
+
+            openBtn.addEventListener("click", function () {
+                popup.style.display = "flex";
+            });
+
+            closeBtn.addEventListener("click", function () {
+                popup.style.display = "none";
+            });
+
+            // Close when clicking outside the popup
+            popup.addEventListener("click", function (event) {
+                if (event.target === popup) {
+                    popup.style.display = "none";
+                }
+            });
+        });
+// ]]></script>
+<script>// <![CDATA[
+document.addEventListener('DOMContentLoaded', function () {
+    var video = document.getElementById('background-video');
+
+    // Check if the device is iOS
+    function isIOS() {
+        return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    }
+
+    // Function to play the video
+    function playVideo() {
+        if (video) {
+            video.play().catch(function (error) {
+                console.log('Autoplay was prevented:', error);
+                // If autoplay fails, show the fallback image
+                document.querySelector('.fallback-image').style.display = 'block';
+            });
+        }
+    }
+
+    // Play video on non-iOS devices
+    if (!isIOS()) {
+        playVideo();
+    } else {
+        // On iOS, wait for user interaction to play the video
+        document.addEventListener('touchstart', function () {
+            playVideo();
+        }, { once: true }); // Only run once
+    }
+});
+// ]]></script>
+</body>
+</html>
